@@ -2,8 +2,9 @@
 {
     background-color: #202020;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Verdana;
+    border-radius: 50px;
 }
 
 body
@@ -60,6 +61,7 @@ input
 button
 {
     margin: 1em;
+    padding: 5px 10px;
 }
 
 button:hover
@@ -82,4 +84,95 @@ a
 span
 {
     margin: 0.5em;
+}
+
+table, td
+{
+    /* border: 1px solid white; */
+    /* border-collapse: collapse; */
+}
+
+tr
+{
+    height: 2em;
+}
+
+td
+{
+    text-align: right;
+}
+
+td *
+{
+    width: 90%;
+}
+
+td:nth-child(2)
+{
+    text-align: center;
+}
+
+input
+{
+    text-align: center;
+}
+
+hr
+{
+    margin: 2em 0 1em 0;
+}
+
+main
+{
+    text-align: center;
+}
+
+ul
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background-color: #363636;
+    padding: 0 3%;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: all 1s ease-in-out;
+    margin: 1em 0;
+}
+
+.zrobione
+{
+    text-decoration: line-through;
+    background-color: #1d1d1d;
+    transition: all 1s ease-in-out;
+    color: hsl(0, 0%, 57%);
+    order: 100;
+}
+
+li span
+{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+li input[type="checkbox"]
+{
+    scale: 2;
+}
+
+li input[type="checkbox"]:hover
+{
+    cursor: pointer;
 }
